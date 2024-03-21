@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-scrollbar {
+  overflow-y: auto; /* Enable scrolling */
+  &::-webkit-scrollbar { /* Target WebKit browsers */
+    display: none;
+  }
+  scrollbar-width: none; /* For Firefox and IE */
+  Ms-overflow-style: none; /* For IE/Edge */
+}
